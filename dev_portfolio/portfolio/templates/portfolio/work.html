@@ -92,5 +92,15 @@
     <footer>
         <p>Explore the projects to see the quality and diversity of my work. Reach out if you want more detailed information!</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const projects = document.querySelectorAll('.project');
+            projects.forEach(project => {
+                project.addEventListener('click', function() {
+                    alert("Learn more about this project: " + this.querySelector('h3').textContent);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
